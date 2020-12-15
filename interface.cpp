@@ -6,9 +6,9 @@ using namespace std;
 
 #define ARROW_UP 72
 #define ARROW_DOWN 80
-#define ELEMENTS_IN_MENU 3 // 3 elementy: singleplayer, multiplayer, exit
+#define ELEMENTS_IN_MENU 3 // 3 elements: singleplayer, multiplayer, exit
 #define ENTER 13
-#define ESC 27 // nieuzywane na razie
+#define ESC 27 // not in use yet
 
 
 void singleplayer()
@@ -40,7 +40,7 @@ public:
     void userChoice();
 
 public:
-    void display();
+    void display(int);
 };
 
 
@@ -52,23 +52,10 @@ void my_interface::userChoice()
     while (true)
     {
         // display
-        system("cls");
-        cout << "Statki 0.1\n\n";
-        switch (iPosition)
-        {
-        case 1:
-            cout << "\n\t\t\t\t>>>\t\tSingleplayer\t\t<<<\n\t\t\t\tMultiplayer\n\t\t\t\tExit\n";
-            break;
-        case 2:
-            cout << "\n\t\t\t\tSingleplayer\n\t\t\t\t>>>\t\tMultiplayer\t\t<<<\n\t\t\t\tExit\n";
-            break;
-        case 3:
-            cout << "\n\t\t\t\tSingleplayer\n\t\t\t\tMultiplayer\n\t\t\t\t>>>\t\tExit\t\t\t<<<\n";
-            break;
-        }
+        display(iPosition);
 
         // get user's key
-        cKey = getch(); // getch() wymaga conio.h
+        cKey = getch(); // getch() requires conio.h
         switch(cKey)
         {
         case ARROW_DOWN:
@@ -102,17 +89,27 @@ void my_interface::userChoice()
 }
 
 
-/*void my_interface::display()// wymaga windows.h
+void my_interface::display(int iPosition)  // requires windows.h
 {
     system("cls");
-
-
-}*/
+    cout << "Statki 0.1\n\n";
+    switch (iPosition)
+    {
+    case 1:
+        cout << "\n\t\t\t\t>>>\t\tSingleplayer\t\t<<<\n\t\t\t\tMultiplayer\n\t\t\t\tExit\n";
+        break;
+    case 2:
+        cout << "\n\t\t\t\tSingleplayer\n\t\t\t\t>>>\t\tMultiplayer\t\t<<<\n\t\t\t\tExit\n";
+        break;
+    case 3:
+        cout << "\n\t\t\t\tSingleplayer\n\t\t\t\tMultiplayer\n\t\t\t\t>>>\t\tExit\t\t\t<<<\n";
+        break;
+    }
+}
 
 
 int main()
 {
-    //cout << "pupa";
     my_interface pom;
     pom.userChoice();
 
