@@ -1,0 +1,66 @@
+# depslib dependency file v1.0
+1631992517 source:c:\users\bbart\desktop\programy (cpp, c)\_do pochwalenia sie\ships_na_github\computer.cpp
+	"classes.hpp"
+	"includes.hpp"
+	"defines.hpp"
+
+1631992749 c:\users\bbart\desktop\programy (cpp, c)\_do pochwalenia sie\ships_na_github\classes.hpp
+	"defines.hpp"
+
+1631991311 source:c:\users\bbart\desktop\programy (cpp, c)\_do pochwalenia sie\ships_na_github\main.cpp
+	"classes.hpp"
+	"includes.hpp"
+	"defines.hpp"
+
+1631967608 c:\users\bbart\desktop\programy (cpp, c)\_do pochwalenia sie\ships_na_github\defines.hpp
+
+1631985257 c:\users\bbart\desktop\programy (cpp, c)\_do pochwalenia sie\ships_na_github\includes.hpp
+	<iostream>
+	<windows.h>
+	<conio.h>
+	<ctime>
+	<cstdio>
+	<fstream>
+	<cstring>
+
+1631991318 source:c:\users\bbart\desktop\programy (cpp, c)\_do pochwalenia sie\ships_na_github\interface.cpp
+	"classes.hpp"
+	"includes.hpp"
+	"defines.hpp"
+
+1631991363 source:c:\users\bbart\desktop\programy (cpp, c)\_do pochwalenia sie\ships_na_github\multiplayer.cpp
+	"classes.hpp"
+	"includes.hpp"
+	"defines.hpp"
+
+1631968964 source:c:\users\bbart\desktop\programy (cpp, c)\_do pochwalenia sie\ships_na_github\my_exit.cpp
+	"classes.hpp"
+	"includes.hpp"
+	"defines.hpp"
+
+1631992387 source:c:\users\bbart\desktop\programy (cpp, c)\_do pochwalenia sie\ships_na_github\user.cpp
+	"classes.hpp"
+	"includes.hpp"
+	"defines.hpp"
+
+1631966666 c:\users\bbart\desktop\programy (cpp, c)\_do pochwalenia sie\ships_na_github\global_var.cpp
+	"defines.hpp"
+
+1631966732 source:c:\users\bbart\desktop\programy (cpp, c)\_do pochwalenia sie\ships_na_github\global_var.cpp
+	"defines.hpp"
+
+1631991798 source:c:\users\bbart\desktop\programy (cpp, c)\_do pochwalenia sie\ships_na_github\computer_prepare.cpp
+	"classes.hpp"
+	"includes.hpp"
+	"defines.hpp"
+
+1631985006 source:c:\users\bbart\desktop\programy (cpp, c)\_do pochwalenia sie\ships_na_github\show_board.cpp
+	"classes.hpp"
+	"includes.hpp"
+	"defines.hpp"
+
+1631991969 source:c:\users\bbart\desktop\programy (cpp, c)\_do pochwalenia sie\ships_na_github\user_prepare.cpp
+	"classes.hpp"
+	"includes.hpp"
+	"defines.hpp"
+
