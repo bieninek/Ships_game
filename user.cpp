@@ -10,8 +10,6 @@ void my_user::startTheGame(my_computer& statCompBoard)
     int iSign, iNumber, iRemainShips;
     while (ifGuessed)
     {
-        //system("cls");
-        //cout << "Plansza gracza\n\n";
 
         statCompBoard.showComputerBoard();
         showBoard(0);
@@ -28,8 +26,6 @@ void my_user::startTheGame(my_computer& statCompBoard)
             }
         }
 
-//        cout << "remain \n" << iRemainShips;
-//    getch();
 
         if (iRemainShips)
         {
@@ -65,9 +61,6 @@ void my_user::startTheGame(my_computer& statCompBoard)
             tempExit.exitCompWins();
         }
     }
-    //============================
-/*
-    my_computer pomComp;
-    pomComp.startTheGameComp();*/
+
     return;
 }

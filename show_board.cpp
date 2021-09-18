@@ -89,10 +89,6 @@ void my_user::showBoard(bool bShowShipsNum)
     }
 
     if (bShowShipsNum)
-    {
         for (int i = 1, j = 4; i < 5; i++, j--)
-        {
             cout << endl << "Masz " << userShipsNumber[i] << " na " << j << " statkow o rozmiarze " << i << " na 1";
-        }
-    }
 }

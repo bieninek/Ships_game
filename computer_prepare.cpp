@@ -28,12 +28,11 @@ void my_computer::createComputerBoard()
 void my_computer::randomShips(int iNumOfFields)
 {
     int iFieldX, iFieldY, iDirection; // direction: 0 - to the right, 1 downwards
-    int iPom;
+    int iTemp;
 
-    while (1 == 1) // !!!!!!! true?
+    while (true)
     {
-        iPom = 0;
-
+        iTemp = 0;
         iFieldX = rand() % BOARD_SIZE;
         iFieldY = rand() % BOARD_SIZE;
 
@@ -45,45 +44,33 @@ void my_computer::randomShips(int iNumOfFields)
         iDirection = rand() % 2;
 
         if (iDirection == 0)
-        {
             for (int i = 0; i < iNumOfFields; i++)
-            {
                 if (iComputerBoard[iFieldX + i][iFieldY] == 1)
                 {
-                    iPom++;
+                    iTemp++;
                     break;
                 }
-            }
-        }
         else
-        {
             for (int i = 0; i < iNumOfFields; i++)
-            {
                 if (iComputerBoard[iFieldX][iFieldY + i] == 1)
                 {
-                    iPom++;
+                    iTemp++;
                     break;
                 }
-            }
-        }
 
         // fields checked
-        if (iPom == 0)
+        if (iTemp == 0)
         {
             if (iDirection == 0)
-            {
                 for (int i = 0; i < iNumOfFields; i++)
                 {
                     iComputerBoard[iFieldX + i][iFieldY] = 1;
                 }
-            }
             else
-            {
                 for (int i = 0; i < iNumOfFields; i++)
                 {
                     iComputerBoard[iFieldX][iFieldY + i] = 1;
                 }
-            }
             return;
         }
     }
