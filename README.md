@@ -5,7 +5,7 @@
 
 ## General Information
 - This project was created as a project at my university.
-- The co-author of the project is [@Bart2021]. My task was to create the interface menu and singleplayer. Bartek had to create multiplayer. That's the reason why <em>multiplayer</em> button doesn't work in menu.
+- The co-author of the project is [@Bart2021](https://github.com/Bart2021). My task was to create the interface menu and singleplayer. Bartek had to create multiplayer. That's the reason why <em>multiplayer</em> button doesn't work in menu.
 - The game is playable, the rules are simple, you can download the .exe file and have fun!
 
 
@@ -24,8 +24,8 @@ The game has many features:
 
 ## Screenshots
 ![menu screenshot](./screenshot_menu.png)
-![game screenshot](./screenshot_game.png)
-https://youtu.be/Pn8GUwZKiOM
+<!--![game screenshot](./screenshot_game.png)-->
+You can also watch a short gameplay here: https://youtu.be/Pn8GUwZKiOM
 
 
 ## Setup
