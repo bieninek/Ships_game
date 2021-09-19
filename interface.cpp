@@ -103,7 +103,7 @@ void my_interface::userChoice()
 void my_interface::display(int iPosition)
 {
     system("cls");
-    cout << "Statki \n\n";  // it's written to let the user know what's the name of the project
+    cout << "Statki v1.2\n\n";  // it's written to let the user know what's the name of the project and project
 
 
     switch (iPosition)

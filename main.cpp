@@ -23,8 +23,6 @@ int main()
     {
         statUser.startTheGame(statComputer);
         statComputer.startTheGameComp(statUser);
-        cout << endl << "Wcisnij dowolny klawisz\n";
-        getch();
     }
 
     return -1;

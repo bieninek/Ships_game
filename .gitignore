@@ -1,2 +1,4 @@
 
 ships/bin/Debug/ships.exe
+*.o
+*.o
