@@ -19,7 +19,7 @@
 //
 //  void my_user::startTheGame(my_computer&) - this method is responsible for game with the computer
 //
-//    INPUT:  a reference to an object class my_computer, simply the computer's board
+//    INPUT:  a reference to an object class my_computer, simply the computers's board
 //    OUTPUT: none
 //
 // =========================
@@ -27,19 +27,25 @@ void my_user::startTheGame(my_computer& statCompBoard)
 {
     bool ifGuessed = true;
     int iSign, iNumber, iRemainShips;
+
+    // if it's the first guess in round or computer guessed correctly
     while (ifGuessed)
     {
+        // display board
         statCompBoard.showComputerBoard();
         showBoard(0);
 
+        // count how many ships remain
         iRemainShips = 0;
         for (int i = 0; i < BOARD_SIZE; i++)
             for (int j = 0; j < BOARD_SIZE; j++)
                 if (statCompBoard.iComputerBoard[i][j] == 1)
                     iRemainShips++;
 
+        // if any ships remain, guess for more
         if (iRemainShips)
         {
+            // computer generates coordinates
             do
             {
                 iSign = rand() % BOARD_SIZE;
@@ -52,11 +58,13 @@ void my_user::startTheGame(my_computer& statCompBoard)
             Sleep(2000);
             cout << "Wylosowane pole: " << (iNumber + 1) << (char)(iSign + 'a') << endl;
 
+            // if computer was correct
             if (userBoard[iNumber][iSign] == 1)
             {
                 cout << "Komputer zgadl" << endl;
                 userBoard[iNumber][iSign] = 2;
             }
+            // incorrect guess
             else
             {
                 cout << "Komputer nie zgadl" << endl;
@@ -66,12 +74,12 @@ void my_user::startTheGame(my_computer& statCompBoard)
             cout << endl << "Wcisnij dowolny klawisz\n";
             getch();
         }
+        // there are no ships left = computer won
         else
         {
             my_exit tempExit;
             tempExit.exitCompWins();
         }
     }
-
     return;
 }
