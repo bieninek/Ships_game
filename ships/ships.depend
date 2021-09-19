@@ -64,3 +64,62 @@
 	"includes.hpp"
 	"defines.hpp"
 
+1631995296 source:c:\users\bbart\documents\github\ships_game\computer.cpp
+	"classes.hpp"
+	"includes.hpp"
+	"defines.hpp"
+
+1631995296 c:\users\bbart\documents\github\ships_game\classes.hpp
+	"defines.hpp"
+
+1631995296 c:\users\bbart\documents\github\ships_game\defines.hpp
+
+1631995296 c:\users\bbart\documents\github\ships_game\includes.hpp
+	<iostream>
+	<windows.h>
+	<conio.h>
+	<ctime>
+	<cstdio>
+	<fstream>
+	<cstring>
+
+1631994688 source:c:\users\bbart\documents\github\ships_game\computer_prepare.cpp
+	"classes.hpp"
+	"includes.hpp"
+	"defines.hpp"
+
+1631995296 source:c:\users\bbart\documents\github\ships_game\interface.cpp
+	"classes.hpp"
+	"includes.hpp"
+	"defines.hpp"
+
+1631995296 source:c:\users\bbart\documents\github\ships_game\main.cpp
+	"classes.hpp"
+	"includes.hpp"
+	"defines.hpp"
+
+1631995296 source:c:\users\bbart\documents\github\ships_game\multiplayer.cpp
+	"classes.hpp"
+	"includes.hpp"
+	"defines.hpp"
+
+1631995296 source:c:\users\bbart\documents\github\ships_game\my_exit.cpp
+	"classes.hpp"
+	"includes.hpp"
+	"defines.hpp"
+
+1631994524 source:c:\users\bbart\documents\github\ships_game\show_board.cpp
+	"classes.hpp"
+	"includes.hpp"
+	"defines.hpp"
+
+1631994475 source:c:\users\bbart\documents\github\ships_game\user.cpp
+	"classes.hpp"
+	"includes.hpp"
+	"defines.hpp"
+
+1631995296 source:c:\users\bbart\documents\github\ships_game\user_prepare.cpp
+	"classes.hpp"
+	"includes.hpp"
+	"defines.hpp"
+
